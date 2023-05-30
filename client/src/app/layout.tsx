@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import "./globals.css";
 
 export const metadata = {
@@ -64,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </footer>
         </main>
+        <Analytics />
       </body>
     </html>
   );
