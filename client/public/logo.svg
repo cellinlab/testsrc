@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="500" height="500">
+  <g>
+    <rect x="0" y="0" width="62.5" height="500" fill="#000000"></rect>
+    <rect x="62.5" y="0" width="62.5" height="500" fill="#FD0000"></rect>
+    <rect x="125" y="0" width="62.5" height="500" fill="#00FF00"></rect>
+    <rect x="187.5" y="0" width="62.5" height="500" fill="#FDFD00"></rect>
+    <rect x="250" y="0" width="62.5" height="500" fill="#0000FE"></rect>
+    <rect x="312.5" y="0" width="62.5" height="500" fill="#FE00FD"></rect>
+    <rect x="375" y="0" width="62.5" height="500" fill="#00FFFF"></rect>
+    <rect x="437.5" y="0" width="62.5" height="500" fill="#FFFFFF"></rect>
+  </g>
+  <g>
+    <clipPath id="circle">
+      <circle cx="250" cy="250" r="250" />
+    </clipPath>
+    <g clip-path="url(#circle)">
+      <rect x="0" y="0" width="62.5" height="500" fill="#FFFFFF"></rect>
+      <rect x="62.5" y="0" width="62.5" height="500" fill="#00FFFF"></rect>
+      <rect x="125" y="0" width="62.5" height="500" fill="#FE00FD"></rect>
+      <rect x="187.5" y="0" width="62.5" height="500" fill="#0000FE"></rect>
+      <rect x="250" y="0" width="62.5" height="500" fill="#FDFD00"></rect>
+      <rect x="312.5" y="0" width="62.5" height="500" fill="#00FF00"></rect>
+      <rect x="375" y="0" width="62.5" height="500" fill="#FD0000"></rect>
+      <rect x="437.5" y="0" width="62.5" height="500" fill="#000000"></rect>
+    </g>
+  </g>
+</svg>
