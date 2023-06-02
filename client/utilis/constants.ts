@@ -41,6 +41,14 @@ export const videoContainerFormats = [
   }
 ];
 
+export type VideoContainerFormat = {
+  label: string;
+  cmd_str: string;
+  value: string;
+};
+
+export type VideoContainerFormatValue = 'mp4' | 'mkv' | 'mov' | 'avi' | 'flv' | 'webm' | 'ts' | 'ogv';
+
 export const containerEncodingMap = {
   mp4: {
     videoCodecs: [
@@ -309,18 +317,23 @@ export const videoFrameRates = [
   }
 ];
 
-export const audioContentOptions = {
-  SINE: {
+export const audioContentOptions = [
+  {
+    label: 'Silence',
+    cmd_str: '-f lavfi -i anullsrc',
+    value: 'anullsrc'
+  },
+  {
     label: 'Sine',
     cmd_str: '-f lavfi -i sine',
     value: 'sine'
   },
-  NOISE: {
+  {
     label: 'Noise',
     cmd_str: '-f lavfi -i anoisesrc',
     value: 'anoisesrc'
   }
-};
+];
 
 export const audioSampleRates = [
   {
